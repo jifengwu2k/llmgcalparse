@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "llmgcalparse"
-version = "0.1.0a6"
+version = "0.1.0a7"
 description = "Create Google Calendar event URLs interactively from a natural language description, leveraging LLMs with an OpenAI Chat Completions-compatible API and user edits."
 readme = "README.md"
 requires-python = ">=2"
@@ -23,6 +23,9 @@ dependencies = [
     "textcompat",
     "typing; python_version < '3.5'"
 ]
+
+[project.scripts]
+llmgcalparse = "llmgcalparse:main"
 
 [project.urls]
 "Homepage" = "https://github.com/jifengwu2k/llmgcalparse"

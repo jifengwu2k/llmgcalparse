@@ -12,7 +12,7 @@ Create Google Calendar event URLs interactively from a natural language descript
 ## Usage
 
 ```bash
-python -m llmgcalparse --api-key=YOUR_API_KEY --base-url=BASE_URL --model=MODEL_NAME
+llmgcalparse --api-key=YOUR_API_KEY --base-url=BASE_URL --model=MODEL_NAME
 ```
 
 - `--api-key`: (Required) Your API key for the LLM service
@@ -22,7 +22,7 @@ python -m llmgcalparse --api-key=YOUR_API_KEY --base-url=BASE_URL --model=MODEL_
 Each step uses [get-unicode-multiline-input-with-editor](https://github.com/jifengwu2k/get-unicode-multiline-input-with-editor) to prompt you in your default text editor (like `git`), so you have full control over what is sent to Google Calendar.
 
 ```
-$ python -m llmgcalparse --api-key=sk-xxxxx --base-url=https://my-llm-api/v1 --model=my-model-name
+$ llmgcalparse --api-key=sk-xxxxx --base-url=https://my-llm-api/v1 --model=my-model-name
 
 # Enter natural language description of event above. Lines starting with # will be ignored.
 Project demo with Alice at 11am July 1st, 2024 via Zoom. Lasts one hour.
@@ -44,6 +44,7 @@ https://calendar.google.com/calendar/render?action=TEMPLATE&text=Project%20demo%
 ```bash
 pip install llmgcalparse
 ```
+After installation, run it as `llmgcalparse`.
 
 ## Vision
 
